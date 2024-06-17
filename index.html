@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+               
+            <img src="./img/coin.png" style="width:20%" alt="">
+            <h1 style="color: goldenrod;">Trump Change</h1>
+          
+            </a>
+            <h3 style="color: goldenrod;">  Lets make your portfolio great again  </h3>
+           
+        </div>
+       
+        <ul >
+            <li class="footersociallinkContainer" >
+                <img class="sociallink" style="width: 30px;" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink"   style="width: 30px;" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink"   style="width: 30px;" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink"   style="width: 30px;" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+
+
+           
+        </ul>
+       
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline" >
+                Turn your Chump  Change into <span class="cryptoText" >Trump Change</span>.
+            </h1>
+         
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/trump1.webp" alt="">
+        </div>
+    </section>
+
+  
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Chain Process</h1>
+            <p class="sectionPara">We do not charge any fees and we do not require 
+              any registration. You keep your privacy and your 
+              coins.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Trading</h1>
+                    <p>
+                        The act of speculating on cryptocurrency price movements 
+                        via a CFD trading account, or buying and selling.
+                    </p>
+                </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Buying</h1>
+                    <p>
+                        Best cryptocurrency exchanges currently purchase Bitcoin, 
+                        Ethereum, and Litecoin other coins and tokens on the platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/coin.png" alt="">
+        </div>
+    </section>
+
+    <div style="margin: 5%; display: flex; justify-content: center; align-items: center; height: 20vh;">
+        <div style="text-align: center;">
+            <div style="font-size: 3rem; color: white; font-family: Arial, sans-serif; font-weight: bold;">Trump Change</div>
+            <div style="margin-top: 10px; font-size: 2rem; color: #0D2746; background-color: gold; padding: 10px 20px; border-radius: 5px; display: inline-block; font-family: Arial, sans-serif; font-weight: bold;">47,000,000 SUPPLY</div>
+        </div>
+    </div>
+
+  
+    <div style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-image: url('./img/flag.png'); background-size: cover; background-position: center;">
+        <video id="myVideo" loop playsinline style="max-width: 100%; max-height: 100%;">
+            <source src="./img/trumpvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('myVideo');
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, {
+                threshold: 0.5 // Adjust this value to determine how much of the video should be visible before playing
+            });
+    
+            observer.observe(video);
+        });
+    </script>
+    
+    
+
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Markets at finger</h1>
+            <p class="sectionPara">The Blockchain is a decentralized, 
+                digital ledger of transactions that are recorded 
+                confirmed
+            </p>
+            <div class="eachMarket">
+                <img src="./img/buy-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Buying</h1>
+                    <p class="darkPara">
+                        Best cryptocurrency exchanges currently purchase 
+                        Bitcoin, Ethereum, and Litecoin other coins and tokens 
+                        on the platform.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/trading-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Trading</h1>
+                    <p class="darkPara">
+                        The act of speculating on cryptocurrency price movements 
+                        via a CFD trading account, or buying and selling.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Supporting</h1>
+                    <p class="darkPara">
+                        Don’t worry if you’re new to crypto and digital 
+                        currencies – Skrill makes setting up a cryptocurrency 
+                        wallet easy.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Online</h1>
+                    <p class="darkPara">
+                        Cryptocurrency, especially Bitcoin, 
+                        has proven to be a popular trading 
+                        vehicle, even if legendary investors 
+                        as good.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+           <h1 class="marketspicHeader">CRYPTOCURRENCY</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/persent-icon-white.svg" alt="">
+                    <article class="marketTitle">Hot Sale</article>
+                </div>
+    
+                <div class="marketPic marketPic2">
+                    <img src="./img/bitcoin-icon-white.svg" alt="">
+                    <article class="marketTitle">Bit coin</article>
+                </div>
+    
+                <div class="marketPic marketPic3">
+                    <img src="./img/ethereum-white-icon.svg" alt="">
+                    <article class="marketTitle">ETHEREUM</article>
+                </div>
+    
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="">
+                    <article class="marketTitle">CONNECTING</article>
+                </div>
+            </div>
+            </div>
+    </section>
+
+     
+
+ 
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
